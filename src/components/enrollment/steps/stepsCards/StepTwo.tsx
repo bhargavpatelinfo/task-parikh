@@ -1,5 +1,6 @@
 import React from "react";
 import { Clock, Correct } from "@/icons";
+import Loader from "@/components/common/Loader";
 
 interface StepTwoProps {
   onNext: () => void;
@@ -46,7 +47,8 @@ const StepTwo: React.FC<StepTwoProps> = ({ onNext }) => {
           <div className="relative">
             <div className="flex items-start">
               <div className="pt-1">
-                <Correct width={11} height={11} />
+                {/* <Correct width={11} height={11} /> */}
+                <Loader className="animate-rotate" />
               </div>
               <div className="ml-2">
                 <h3 className="text-light-secondary font-medium text-sm">
