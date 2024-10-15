@@ -57,6 +57,9 @@ module.exports = {
           },
         },
       },
+      maxWidth: {
+        320: "320px",
+      },
       keyframes: {
         rotate: {
           "0%": { transform: "rotate(0deg)" },
