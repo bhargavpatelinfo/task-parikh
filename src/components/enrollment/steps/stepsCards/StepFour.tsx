@@ -7,7 +7,7 @@ interface StepFourProps {
 
 const StepFour: React.FC<StepFourProps> = ({ onNext }) => {
   return (
-    <React.Fragment>
+    <div className="flex flex-col items-center">
       <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
         <div className="flex flex-col items-center gap-6">
           <div className="bg-light-green-100  rounded-9999 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto w-20 h-20">
@@ -24,12 +24,12 @@ const StepFour: React.FC<StepFourProps> = ({ onNext }) => {
         </div>
       </div>
       <div
-      onClick={onNext}
+        onClick={onNext}
         className="py-2 px-3 text-light-gray font-medium mt-6 text-center block cursor-pointer"
       >
         {"Reset"}
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

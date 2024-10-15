@@ -15,11 +15,6 @@ const Steps: React.FC = () => {
     }
   };
 
-  // const handlePrevStep = () => {
-  //   if (currentStep > 1) {
-  //     setCurrentStep(currentStep - 1);
-  //   }
-  // };
   return (
     <div>
       {currentStep === 1 && <StepOne onNext={handleNextStep} />}

@@ -24,7 +24,9 @@ const StepOne: React.FC<StepOneProps> = ({ onNext }) => {
             {"To enroll this person, please Send Enrollment Request."}
           </p>
         </div>
-        <Button  onClick={onNext} variant="black">{"Send Enrollment Request"}</Button>
+        <Button onClick={onNext} variant="black">
+          {"Send Enrollment Request"}
+        </Button>
       </div>
     </div>
   );
