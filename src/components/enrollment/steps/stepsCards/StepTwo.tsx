@@ -8,7 +8,7 @@ interface StepTwoProps {
 const StepTwo: React.FC<StepTwoProps> = ({ onNext }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
+      <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600 shadow-card-shadow">
         <div className="flex flex-col items-center gap-6">
           <div className="bg-light-lightBlue rounded-30 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto">
             <Clock width={14} height={14} />
@@ -28,10 +28,10 @@ const StepTwo: React.FC<StepTwoProps> = ({ onNext }) => {
         <div className="bg-light-gray-600 h-1 w-full mt-6 mb-4" />
         <div className="flex flex-col items-start mt-4">
           <div className="relative mb-3">
-            <div className="absolute w-1 bg-light-gray-700/20 h-5 left-1 top-6 ml-1"></div>
+            <div className="absolute w-1 bg-light-gray-700/20 h-5 left-6.5 top-25"></div>
             <div className="flex items-start">
               <div className="pt-1">
-                <Correct width={11} height={11} />
+                <Correct width={14} height={14} />
               </div>
               <div className="ml-2">
                 <h3 className="text-light-secondary font-medium text-sm">

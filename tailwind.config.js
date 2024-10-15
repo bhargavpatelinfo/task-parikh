@@ -3,6 +3,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        25: "25px",
+        6.5: "6.5px",
+      },
+      boxShadow: {
+        "card-shadow": "0px 1px 2px 0px #0000000D",
+      },
       colors: {
         // Light Theme Colors
         light: {
