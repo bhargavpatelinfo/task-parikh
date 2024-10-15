@@ -1,11 +1,11 @@
 // src/enrollment/steps/index.tsx
 import React from "react";
-import StepTwo from "./stepsCards/StepTwo";
+import StepOne from "./stepsCards/StepOne";
 
 const Steps: React.FC = () => {
   return (
     <React.Fragment>
-      <StepTwo />
+      <StepOne />
     </React.Fragment>
   );
 };
