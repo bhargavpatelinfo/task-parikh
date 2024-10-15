@@ -11,15 +11,15 @@ const StepTwo: React.FC = () => {
           <div className="bg-light-lightBlue rounded-30 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto">
             <Clock width={14} height={14} />
             <span className="text-light-blue font-medium text-xs">
-              Waiting to be completed
+              {"Waiting to be completed"}
             </span>
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-light-secondary text-lg font-semibold text-center">
-              Enrollment requested
+              {"Enrollment requested"}
             </h2>
             <p className="text-light-gray text-sm font-normal text-center">
-              Please wait until the customer complete the process.
+              {"Please wait until the customer complete the process."}
             </p>
           </div>
         </div>
@@ -34,10 +34,10 @@ const StepTwo: React.FC = () => {
               </div>
               <div className="ml-2">
                 <h3 className="text-light-secondary font-medium text-sm">
-                  Sent via SMS to +420774654789
+                  {"Sent via SMS to +420774654789"}
                 </h3>
                 <p className="text-xs text-light-gray font-medium">
-                  a minute ago
+                 {" a minute ago"}
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ const StepTwo: React.FC = () => {
               </div>
               <div className="ml-2">
                 <h3 className="text-light-secondary font-medium text-sm">
-                  Clicked the link in the text message
+                  {"Clicked the link in the text message"}
                 </h3>
               </div>
             </div>
@@ -60,7 +60,7 @@ const StepTwo: React.FC = () => {
         href="#"
         className="py-2 px-3 text-light-gray font-medium mt-6 text-center block"
       >
-        Reset
+       {"Reset"}
       </a>
     </React.Fragment>
   );

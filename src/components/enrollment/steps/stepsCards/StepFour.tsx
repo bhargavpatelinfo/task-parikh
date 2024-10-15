@@ -11,10 +11,10 @@ const StepFour: React.FC = () => {
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-light-secondary text-lg font-semibold text-center">
-              Enrolled Successfully 👍
+              {"Enrolled Successfully 👍"}
             </h2>
             <p className="text-light-gray text-sm font-normal text-center">
-              This person is Authenticated, you can proceed.
+              {"This person is Authenticated, you can proceed."}
             </p>
           </div>
         </div>
@@ -23,7 +23,7 @@ const StepFour: React.FC = () => {
         href="#"
         className="py-2 px-3 text-light-gray font-medium mt-6 text-center block"
       >
-        Reset
+        {"Reset"}
       </a>
     </React.Fragment>
   );
