@@ -28,7 +28,7 @@ const StepTwo: React.FC<StepTwoProps> = ({ onNext }) => {
         <div className="bg-light-gray-600 h-1 w-full mt-6 mb-4" />
         <div className="flex flex-col items-start mt-4">
           <div className="relative mb-3">
-            <div className="absolute w-1 bg-light-gray-700/20 h-5 left-1 top-6"></div>
+            <div className="absolute w-1 bg-light-gray-700/20 h-5 left-1 top-6 ml-1"></div>
             <div className="flex items-start">
               <div className="pt-1">
                 <Correct width={11} height={11} />
