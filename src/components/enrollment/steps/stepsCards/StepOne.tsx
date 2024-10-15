@@ -1,9 +1,12 @@
 import React from "react";
-
 import { Button } from "@/components/ui/button";
 import { Question } from "@/icons";
 
-const StepOne: React.FC = () => {
+interface StepOneProps {
+  onNext: () => void;
+}
+
+const StepOne: React.FC<StepOneProps> = ({ onNext }) => {
   return (
     <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
       <div className="flex flex-col items-center gap-6">
@@ -19,7 +22,7 @@ const StepOne: React.FC = () => {
             {"To enroll this person, please Send Enrollment Request."}
           </p>
         </div>
-        <Button className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent  border-transparent hover:border-light-secondary border hover:!text-light-secondary">
+        <Button onClick={onNext} className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent border-transparent hover:border-light-secondary border hover:!text-light-secondary">
           {"Send Enrollment Request"}
         </Button>
       </div>

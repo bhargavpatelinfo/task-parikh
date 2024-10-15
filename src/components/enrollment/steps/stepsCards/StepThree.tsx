@@ -2,7 +2,11 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Security } from "@/icons";
 
-const StepThree: React.FC = () => {
+interface StepThreeProps {
+  onNext: () => void;
+}
+
+const StepThree: React.FC<StepThreeProps> = ({ onNext }) => {
   return (
     <React.Fragment>
       <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
@@ -18,7 +22,9 @@ const StepThree: React.FC = () => {
               {"The enrollment failed. Please ask the customer to enroll again or block?"}
             </p>
           </div>
-          <Button className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent  border-transparent hover:border-light-secondary border hover:!text-light-secondary">
+          <Button
+          onClick={onNext}
+          className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent  border-transparent hover:border-light-secondary border hover:!text-light-secondary">
            {" Send Enrollment Request"}
           </Button>
         </div>

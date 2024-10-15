@@ -1,7 +1,11 @@
 import { Success } from "@/icons";
 import React from "react";
 
-const StepFour: React.FC = () => {
+interface StepFourProps {
+  onNext: () => void;
+}
+
+const StepFour: React.FC<StepFourProps> = ({ onNext }) => {
   return (
     <React.Fragment>
       <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
@@ -19,12 +23,12 @@ const StepFour: React.FC = () => {
           </div>
         </div>
       </div>
-      <a
-        href="#"
-        className="py-2 px-3 text-light-gray font-medium mt-6 text-center block"
+      <div
+      onClick={onNext}
+        className="py-2 px-3 text-light-gray font-medium mt-6 text-center block cursor-pointer"
       >
         {"Reset"}
-      </a>
+      </div>
     </React.Fragment>
   );
 };

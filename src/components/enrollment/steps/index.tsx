@@ -5,14 +5,28 @@ import StepThree from "./stepsCards/StepThree";
 import StepFour from "./stepsCards/StepFour";
 
 const Steps: React.FC = () => {
-  const [step,setStep] = useState()
+  const [currentStep, setCurrentStep] = useState(1);
+  const totalSteps = 4;
+  const handleNextStep = () => {
+    if (currentStep === totalSteps) {
+      setCurrentStep(1);
+    } else {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  // const handlePrevStep = () => {
+  //   if (currentStep > 1) {
+  //     setCurrentStep(currentStep - 1);
+  //   }
+  // };
   return (
-    <React.Fragment>
-      <StepOne />
-      <StepTwo />
-      <StepThree />
-      <StepFour />
-    </React.Fragment>
+    <div>
+      {currentStep === 1 && <StepOne onNext={handleNextStep} />}
+      {currentStep === 2 && <StepTwo onNext={handleNextStep} />}
+      {currentStep === 3 && <StepThree onNext={handleNextStep} />}
+      {currentStep === 4 && <StepFour onNext={handleNextStep} />}
+    </div>
   );
 };
 

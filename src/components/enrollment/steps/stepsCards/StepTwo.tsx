@@ -1,9 +1,11 @@
 import React from "react";
-
-import { Button } from "@/components/ui/button";
 import { Clock, Correct } from "@/icons";
 
-const StepTwo: React.FC = () => {
+interface StepTwoProps {
+  onNext: () => void;
+}
+
+const StepTwo: React.FC<StepTwoProps> = ({ onNext }) => {
   return (
     <React.Fragment>
       <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
@@ -37,7 +39,7 @@ const StepTwo: React.FC = () => {
                   {"Sent via SMS to +420774654789"}
                 </h3>
                 <p className="text-xs text-light-gray font-medium">
-                 {" a minute ago"}
+                  {" a minute ago"}
                 </p>
               </div>
             </div>
@@ -56,12 +58,12 @@ const StepTwo: React.FC = () => {
           </div>
         </div>
       </div>
-      <a
-        href="#"
-        className="py-2 px-3 text-light-gray font-medium mt-6 text-center block"
+      <div
+        onClick={onNext}
+        className="py-2 px-3 text-light-gray font-medium mt-6 text-center block cursor-pointer"
       >
-       {"Reset"}
-      </a>
+        {"Reset"}
+      </div>
     </React.Fragment>
   );
 };
