@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button } from "@/components/ui/button";
-import { Clock } from "@/icons";
+import { Clock, Correct } from "@/icons";
 
 const StepTwo: React.FC = () => {
   return (
@@ -22,9 +22,38 @@ const StepTwo: React.FC = () => {
               Please wait until the customer complete the process.
             </p>
           </div>
-          <Button className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent  border-transparent hover:border-light-secondary border hover:!text-light-secondary">
-            Send Enrollment Request
-          </Button>
+        </div>
+        <div className="bg-light-gray-600 h-1 w-full mt-6 mb-4" />
+        <div className="flex flex-col items-start mt-4">
+          {/* Step 1 */}
+          <div className="relative mb-3">
+            <div className="absolute w-1 bg-light-gray-700/20 h-5 left-1 top-6"></div>
+            <div className="flex items-start">
+              <div className="pt-1">
+                <Correct width={11} height={11} />
+              </div>
+              <div className="ml-2">
+                <h3 className="text-light-secondary font-medium text-sm">
+                  Sent via SMS to +420774654789
+                </h3>
+                <p className="text-xs text-light-gray font-medium">
+                  a minute ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="flex items-start">
+              <div className="pt-1">
+                <Correct width={11} height={11} />
+              </div>
+              <div className="ml-2">
+                <h3 className="text-light-secondary font-medium text-sm">
+                  Clicked the link in the text message
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <a

@@ -24,7 +24,8 @@ module.exports = {
             300: "#DFE3E8",
             400: "#F5F5F5",
             500: "#F4F4F5",
-            600: "##E4E4E7",
+            600: "#E4E4E7",
+            700: "#757575",
           },
           red: {
             DEFAULT: "#B91C1C",
@@ -52,7 +53,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-        "sf-pro":["sf-pro", "sans-serif"]
+        "sf-pro": ["sf-pro", "sans-serif"],
       },
       fontSize: {
         "custom-13": "13px",
@@ -63,6 +64,12 @@ module.exports = {
       borderRadius: {
         30: "30px",
         9999: "9999px",
+      },
+      height: {
+        1: "1px",
+      },
+      width: {
+        1: "1px",
       },
     },
   },
