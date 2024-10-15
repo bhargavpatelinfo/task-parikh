@@ -42,6 +42,9 @@ module.exports = {
             100: "#E1F5FF",
             200: "#C1EBFF",
           },
+          green: {
+            100: "#F0FDF4",
+          },
           customGray: {
             DEFAULT: "#DFE3E8",
           },
@@ -57,7 +60,8 @@ module.exports = {
         5: "5px",
       },
       borderRadius: {
-        30: "30px", // Add this line
+        30: "30px",
+        9999: "9999px",
       },
     },
   },

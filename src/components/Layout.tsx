@@ -1,4 +1,4 @@
-import React from "react"; // Import React
+import React from "react";
 import Header from "./common/Header";
 
 const Layout: React.FC = ({ children }) => {

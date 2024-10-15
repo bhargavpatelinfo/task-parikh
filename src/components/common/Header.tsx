@@ -1,6 +1,4 @@
-// src/components/common/Header.tsx
 import React from "react";
-import headerData from "../../locales/header.json";
 import { Button } from "../ui/button";
 import { Dots, Thumb } from "@/icons";
 
@@ -16,13 +14,12 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-5 py-1">
           <Thumb width={18} height={20} />
           <h2 className="text-13 font-bold leading-4 text-light-gray-700 dark:text-dark-gray-200">
-            {headerData?.title}
+            Passkey Authenticator
           </h2>
         </div>
         <Button
           onClick={handleToggle}
           className="border border-light-gray-300 dark:border-dark-gray-300 rounded-md w-6 h-6 flex items-center justify-center p-0 dark:bg-transparent"
-          title={headerData.toggleTooltip}
         >
           <Dots
             width={14}
