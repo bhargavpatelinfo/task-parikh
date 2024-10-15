@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <div />
         <div className="flex items-center gap-5 py-1">
           <Thumb width={18} height={20} />
-          <h2 className="text-13 font-bold leading-4 text-light-gray-700 dark:text-dark-gray-200">
+          <h2 className="text-13 font-bold leading-4 text-light-gray-700 dark:text-dark-gray-200 font-sf-pro">
             Passkey Authenticator
           </h2>
         </div>
