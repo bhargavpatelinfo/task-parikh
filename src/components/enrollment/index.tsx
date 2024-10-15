@@ -7,7 +7,7 @@ const Enrollment: React.FC = () => {
     <Layout>
       <div className="w-full py-6 px-4">
         <img
-          src="/images/mailchimp.svg"
+          src="/images/mailchimp.png"
           width={131}
           height={32}
           className="max-w-32 w-full mx-auto"

@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-between">
         <div />
         <div className="flex items-center gap-5 py-1">
-          <Thumb width={9} height={10} />
+          <Thumb width={18} height={20} />
           <h2 className="text-13 font-bold leading-4 text-light-gray-700 dark:text-dark-gray-200">
             {headerData?.title}
           </h2>
