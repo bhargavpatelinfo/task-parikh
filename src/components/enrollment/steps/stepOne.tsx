@@ -18,7 +18,7 @@ const StepOne: React.FC = () => {
           To enroll this person, please Send Enrollment Request.
         </p>
       </div>
-      <Button variant={"default"}>Next</Button>
+      <Button variant={"default"} > Next</Button>
     </div>
   );
 };
