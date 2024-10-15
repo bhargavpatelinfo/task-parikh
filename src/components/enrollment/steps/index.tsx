@@ -5,7 +5,7 @@ import StepThree from "./stepsCards/StepThree";
 import StepFour from "./stepsCards/StepFour";
 
 const Steps: React.FC = () => {
-  const [step,setStep] = useState()
+  const [step, setStep] = useState();
   return (
     <React.Fragment>
       <StepOne />

@@ -1,6 +1,4 @@
 import React from "react";
-
-import { Button } from "@/components/ui/button";
 import { Clock, Correct } from "@/icons";
 
 const StepTwo: React.FC = () => {
@@ -25,7 +23,6 @@ const StepTwo: React.FC = () => {
         </div>
         <div className="bg-light-gray-600 h-1 w-full mt-6 mb-4" />
         <div className="flex flex-col items-start mt-4">
-          {/* Step 1 */}
           <div className="relative mb-3">
             <div className="absolute w-1 bg-light-gray-700/20 h-5 left-1 top-6"></div>
             <div className="flex items-start">

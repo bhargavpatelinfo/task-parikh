@@ -52,7 +52,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
         "sf-pro": ["sf-pro", "sans-serif"],
       },
       fontSize: {
