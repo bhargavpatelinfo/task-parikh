@@ -19,13 +19,13 @@ const StepThree: React.FC<StepThreeProps> = ({ onNext }) => {
               {"Enrollment failed"}
             </h2>
             <p className="text-light-gray text-sm font-normal text-center">
-              {"The enrollment failed. Please ask the customer to enroll again or block?"}
+              {
+                "The enrollment failed. Please ask the customer to enroll again or block?"
+              }
             </p>
           </div>
-          <Button
-          onClick={onNext}
-          className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent  border-transparent hover:border-light-secondary border hover:!text-light-secondary">
-           {" Send Enrollment Request"}
+          <Button onClick={onNext} variant="black">
+            {"Send Enrollment Request"}
           </Button>
         </div>
       </div>
@@ -33,7 +33,7 @@ const StepThree: React.FC<StepThreeProps> = ({ onNext }) => {
         href="#"
         className="py-2 px-3 text-light-gray font-medium mt-6 text-center block"
       >
-       {" Reset"}
+        {" Reset"}
       </a>
     </React.Fragment>
   );

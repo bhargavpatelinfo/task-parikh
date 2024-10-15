@@ -50,13 +50,19 @@ module.exports = {
             DEFAULT: "#DFE3E8",
           },
         },
+        // Dark Theme Colors
+        dark: {
+          primary: {
+            DEFAULT: "#000000",
+          },
+        },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
         "sf-pro": ["sf-pro", "sans-serif"],
       },
       fontSize: {
-        "custom-13": "13px",
+        13: "13px",
       },
       gap: {
         5: "5px",
