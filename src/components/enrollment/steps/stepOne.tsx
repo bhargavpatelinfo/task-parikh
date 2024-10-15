@@ -8,7 +8,7 @@ const StepOne: React.FC = () => {
     <div className="flex flex-col items-center gap-6">
       <div className="bg-light-red-300 rounded-30 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto">
         <Question width={14} height={14} />
-        <span className="text-light-red font-medium">Unenrolled</span>
+        <span className="text-light-red font-medium text-xs">Unenrolled</span>
       </div>
       <div className="flex flex-col gap-2">
         <h2 className="text-light-secondary text-lg font-semibold text-center">
@@ -18,7 +18,9 @@ const StepOne: React.FC = () => {
           To enroll this person, please Send Enrollment Request.
         </p>
       </div>
-      <Button variant={"default"} > Next</Button>
+      <Button className="!bg-light-secondary rounded-md !text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:!bg-transparent  border-transparent hover:border-light-secondary border hover:!text-light-secondary">
+        Send Enrollment Request
+      </Button>
     </div>
   );
 };

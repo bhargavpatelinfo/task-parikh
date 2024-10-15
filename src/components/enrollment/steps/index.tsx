@@ -4,7 +4,7 @@ import StepOne from "./stepOne";
 
 const Steps: React.FC = () => {
   return (
-    <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4">
+    <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600">
       <StepOne />
     </div>
   );
