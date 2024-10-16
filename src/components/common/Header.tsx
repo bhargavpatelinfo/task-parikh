@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-full py-3 px-4 bg-white">
+    <header className="w-full py-3 px-4 bg-white hidden sm:block">
       <div className="flex items-center justify-between">
         <div />
         <div className="flex items-center gap-5 py-1">

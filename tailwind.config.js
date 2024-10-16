@@ -63,6 +63,9 @@ module.exports = {
           customGray: {
             DEFAULT: "#DFE3E8",
           },
+          black: {
+            12: "#0000001F",
+          },
         },
         // Dark Theme Colors
         dark: {
@@ -96,6 +99,7 @@ module.exports = {
       borderRadius: {
         30: "30px",
         9999: "9999px",
+        10: "10px",
       },
       height: {
         1: "1px",
