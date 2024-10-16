@@ -1,4 +1,4 @@
-import { Success } from "@/icons";
+import { CircleCheckBig } from "lucide-react";
 import React from "react";
 
 interface StepFourProps {
@@ -11,7 +11,7 @@ const StepFour: React.FC<StepFourProps> = ({ onNext }) => {
       <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600 shadow-card-shadow">
         <div className="flex flex-col items-center gap-6">
           <div className="bg-light-green-100  rounded-9999 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto w-20 h-20">
-            <Success width={32} height={32} />
+            <CircleCheckBig size={32} className="text-light-green-200" />
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-light-secondary text-lg font-semibold text-center">

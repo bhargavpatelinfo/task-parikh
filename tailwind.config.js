@@ -42,11 +42,13 @@ module.exports = {
             100: "#D94A4A",
             200: "#F0A3A3",
             300: "#FEF2F2",
+            400: "#BE123C",
           },
           blue: {
             DEFAULT: "#0369A1",
             100: "#4F99C3",
             200: "#A1D6E9",
+            300: "#2458D7",
           },
           lightBlue: {
             DEFAULT: "#F0F9FF",
@@ -55,6 +57,8 @@ module.exports = {
           },
           green: {
             100: "#F0FDF4",
+            200: "#15803D",
+            300: "#16A34A",
           },
           customGray: {
             DEFAULT: "#DFE3E8",

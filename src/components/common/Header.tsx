@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import { Dots, Thumb } from "@/icons";
+import { Ellipsis, Fingerprint } from "lucide-react";
 
 const Header: React.FC = () => {
   const handleToggle = () => {
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-between">
         <div />
         <div className="flex items-center gap-5 py-1">
-          <Thumb width={18} height={20} />
+          <Fingerprint size={18} className="text-light-blue-300 h-5" />
           <h2 className="text-13 font-bold leading-4 text-light-primary dark:text-dark-gray-200 font-sf-pro">
             Passkey Authenticator
           </h2>
@@ -21,11 +21,7 @@ const Header: React.FC = () => {
           onClick={handleToggle}
           className="border border-light-gray-300 dark:border-dark-gray-300 rounded-md w-6 h-6 flex items-center justify-center p-0 dark:bg-transparent"
         >
-          <Dots
-            width={14}
-            height={14}
-            className="text-light-gray-800 dark:text-dark-gray-200"
-          />
+          <Ellipsis size={14} />
         </Button>
       </div>
     </header>
