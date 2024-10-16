@@ -48,7 +48,7 @@ const StepTwo: React.FC<StepTwoProps> = ({ onNext }) => {
               <div className="pt-1">
                 <div
                   className={
-                    " border-[1.5px] h-3 w-3 animate-rotate border-blue-500 border-t-gray-200 rounded-full"
+                    "border-1.5 h-3 w-3 animate-rotate border-blue-500 border-t-gray-200 rounded-full"
                   }
                 ></div>
               </div>

@@ -10,6 +10,9 @@ module.exports = {
       boxShadow: {
         "card-shadow": "0px 1px 2px 0px #0000000D",
       },
+      borderWidth: {
+        1.5: "1.5px",
+      },
       colors: {
         // Light Theme Colors
         light: {
