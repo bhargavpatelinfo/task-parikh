@@ -21,6 +21,8 @@ const buttonVariants = cva(
         link: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50",
         black:
           "bg-light-secondary rounded-md text-light-gray-90 font-medium w-full transition duration-300 ease-in-out hover:bg-transparent border-transparent hover:border-light-secondary border hover:text-light-secondary",
+        blackOutline:
+          "bg-transparent rounded-md text-light-secondary font-medium w-full transition duration-300 ease-in-out hover:bg-light-secondary border-light-gray-600 hover:border-transparent hover:text-white border",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -47,7 +49,7 @@ const Button = React.forwardRef<HTMLElement, ButtonProps>(
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
-        ref={ref as any }
+        ref={ref as any}
         {...props}
       />
     );

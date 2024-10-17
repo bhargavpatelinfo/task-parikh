@@ -11,8 +11,8 @@ const StepFour: React.FC<StepFourProps> = ({ onNext }) => {
     <div className="flex flex-col items-center">
       <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600 shadow-card-shadow">
         <div className="flex flex-col items-center gap-6">
-           <CommonStepCard
-            Icon={CircleCheckBig}
+          <CommonStepCard
+            Icon={<CircleCheckBig />}
             IconSize={32}
             statusClassName="bg-light-green-100  rounded-9999 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto w-20 h-20"
             statusColor="text-light-green-200"

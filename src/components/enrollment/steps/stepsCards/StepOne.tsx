@@ -12,7 +12,7 @@ const StepOne: React.FC<StepOneProps> = ({ onNext }) => {
     <div className="bg-white rounded-lg mt-6 pt-6 px-4 pb-4 border border-light-gray-600 shadow-card-shadow">
       <div className="flex flex-col items-center gap-6">
         <CommonStepCard
-          Icon={CircleHelp}
+          Icon={<CircleHelp />}
           IconSize={14}
           statusText="Unenrolled"
           statusClassName="bg-light-red-300 rounded-30 inline-flex items-center justify-center px-2 py-1 gap-1 mx-auto"

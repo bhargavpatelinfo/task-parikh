@@ -1,14 +1,13 @@
-import { LucideIcon } from "lucide-react";
 import React from "react";
 
 interface StepProps {
-  Icon: LucideIcon;
-  IconSize: number;
+  Icon?: React.ReactNode;
+  IconSize?: number;
   statusText?: string;
   title: string;
   body: string;
   statusColor: string;
-  statusClassName: string;
+  statusClassName?: string;
   statusTextClassName?: string;
 }
 
@@ -25,8 +24,13 @@ const CommonStepCard: React.FC<StepProps> = ({
   return (
     <>
       <div className={statusClassName}>
-        <Icon size={IconSize} className={statusColor} />
-        <span className={statusTextClassName}>{statusText}</span>
+        {React.cloneElement(Icon as React.ReactElement, {
+          size: IconSize,
+          className: statusColor,
+        })}
+        {statusText && (
+          <span className={statusTextClassName}>{statusText}</span>
+        )}
       </div>
       <div className="flex flex-col gap-2">
         <h2 className="text-light-secondary text-lg font-semibold text-center">

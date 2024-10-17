@@ -65,6 +65,7 @@ module.exports = {
           },
           black: {
             12: "#0000001F",
+            100: "#09090B",
           },
         },
         // Dark Theme Colors
